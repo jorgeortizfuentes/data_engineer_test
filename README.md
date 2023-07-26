@@ -41,6 +41,8 @@ A continuación, usted debe:
 
 6. La empresa quiere implementar un sistema de descuentos mediante cupones. ¿Cómo modificarías el modelo de datos para agregarlo? Describa su propuesta, justifique y explique por qué es la mejor opción. No es necesario que lo implemente.
 
-Suba todo el código a un repositorio en GitHub. Genere un archivo README.md que responda y explique lo requerido en los ejercicios anteriores. Envíe el link del repositorio a la persona que le envió este desafío.
+Suba todo el código a un repositorio en GitHub. Genere un archivo README.md que responda y explique lo requerido en los ejercicios anteriores. Declare si ocupó algún asistente de código (ChatGPT, GitHub Copilot, TabNine) y de qué manera lo ayudó a resolver el problema en caso de haberlo usado.
+
+Envíe el link del repositorio a la persona que le envió este desafío.
 
 Se evaluará la calidad del código, la claridad de las explicaciones y la solución propuesta.
