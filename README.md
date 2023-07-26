@@ -1,29 +1,29 @@
-# Data Engineer Test
+# Test Data Engineer
 
-Para una empresa de carsharing estoy diseñando una evaluación para contratar a un Data Engineer. 
+El desafío consiste en crear una base de datos en Postgres usando Docker y cargar los datos del archivo trips.csv en las tablas que considere correspondientes.
 
-El archivo trips.csv contiene información simulada de viajes realizados en Awto. Cada fila está representada por un viaje. Las columnas corresponden a  'trip_id', 'user_id', 'name_user', 'rut_user', 'vehicle_id', 'booking_time', 'start_time', 'end_time', 'status_id', 'travel_dist', 'membership_id','price_amount', 'price_tax', 'price_total', 'start_lat', 'start_lon', 'end_lat', 'end_lon'
+El archivo trips.csv contiene información simulada de viajes realizados en Awto. Cada fila está representada por un viaje. Las columnas corresponden a 'trip_id', 'user_id', 'name_user', 'rut_user', 'vehicle_id', 'booking_time', 'start_time', 'end_time', 'status_id', 'travel_dist', 'membership_id','price_amount', 'price_tax', 'price_total', 'start_lat', 'start_lon', 'end_lat', 'end_lon'
 
-* trip_id: Identificador único del viaje. Es un número o cadena que permite diferenciar cada viaje de manera única.
-* user_id: Identificador del usuario que realizó el viaje. Es un valor único asociado a cada usuario.
-* name_user: Nombre del usuario que realizó el viaje.
-* rut_user: RUT (Rol Único Tributario) del usuario que realizó el viaje
-* vehicle_id: Identificador del vehículo utilizado en el viaje.
-* booking_time: Fecha y hora en la que se realizó la reserva del viaje.
-* start_time: Fecha y hora de inicio del viaje.
-* end_time: Fecha y hora de finalización del viaje.
-* status_id: Estado del viaje. Puede indicar si el viaje está en curso, completado, cancelado, etc.
-* travel_dist: Distancia en metros recorrida en el viaje, generalmente expresada en kilómetros.
-* membership_id: Identificador de membresía asociado al usuario que realizó el viaje. 
-* price_amount: Monto del precio del viaje (sin impuestos).
-* price_tax: Monto de impuestos aplicados al precio del viaje.
-* price_total: Monto total del precio del viaje (incluyendo impuestos).
-* start_lat: Latitud de la ubicación de inicio del viaje.
-* start_lon: Longitud de la ubicación de inicio del viaje.
-* end_lat: Latitud de la ubicación de finalización del viaje.
-* end_lon: Longitud de la ubicación de finalización del viaje.
+- trip_id: Identificador único del viaje. Es un número o cadena que permite diferenciar cada viaje de manera única.
+- user_id: Identificador del usuario que realizó el viaje. Es un valor único asociado a cada usuario.
+- name_user: Nombre del usuario que realizó el viaje.
+- rut_user: RUT (Rol Único Tributario) del usuario que realizó el viaje
+- vehicle_id: Identificador del vehículo utilizado en el viaje.
+- booking_time: Fecha y hora en la que se realizó la reserva del viaje.
+- start_time: Fecha y hora de inicio del viaje.
+- end_time: Fecha y hora de finalización del viaje.
+- status_id: Estado del viaje. Puede indicar si el viaje está en curso, completado, cancelado, etc.
+- travel_dist: Distancia en metros recorrida en el viaje, generalmente expresada en kilómetros.
+- membership_id: Identificador de membresía asociado al usuario que realizó el viaje.
+- price_amount: Monto del precio del viaje (sin impuestos).
+- price_tax: Monto de impuestos aplicados al precio del viaje.
+- price_total: Monto total del precio del viaje (incluyendo impuestos).
+- start_lat: Latitud de la ubicación de inicio del viaje.
+- start_lon: Longitud de la ubicación de inicio del viaje.
+- end_lat: Latitud de la ubicación de finalización del viaje.
+- end_lon: Longitud de la ubicación de finalización del viaje.
 
-El desafío consiste en crear una base de datos en Postgres usando Docker y cargar los datos del archivo trips.csv en las tablas que considere correspondientes. Para ello debe.
+A continuación, usted debe:
 
 1. Diseñar un modelo de datos. Genere una propuesta sobre cómo guardar los datos. Justifique esa propuesta y explique por qué es la mejor opción.
 
@@ -31,13 +31,14 @@ El desafío consiste en crear una base de datos en Postgres usando Docker y carg
 
 3. Crea las tablas del modelo de datos que diseñaste en el paso 1. Puede usar scripts SQL o código en Python.
 
-4. Genera archivos en Python para cargar los datos del archivo trips.csv en las tablas que creaste en el paso anterior. 
+4. Genera archivos en Python para cargar los datos del archivo trips.csv en las tablas que creaste en el paso anterior.
 
-5. Cree una nueva tabla en Postgres llamada resumen_diario. 
-   1. Genera con Python un proceso de ETL que cargue en la tabla un resumen por día de la cantidad de viajes, los suma de ingresos y la suma de metros recorridos. Explique la decisión de diseño que tomó para generar el resumen. 
+5. Cree una nueva tabla en Postgres llamada resumen_diario.
+
+   1. Genera con Python un proceso de ETL que cargue en la tabla un resumen por día de la cantidad de viajes, los suma de ingresos y la suma de metros recorridos. Explique la decisión de diseño que tomó para generar el resumen.
    2. Señale (sin necesidad de implementar) qué procesos podría desarrollar para asegurar la consistencia de los datos en la tabla resumen_diario.
    3. Señale (sin necesidad de implementar) cómo podría automatizar este proceso de ETL de manera diaria.
 
 6. La empresa quiere implementar un sistema de descuentos mediante cupones. ¿Cómo modificarías el modelo de datos para agregarlo? Describa su propuesta, justifique y explique por qué es la mejor opción. No es necesario que lo implemente.
 
-Suba todo el código a un repositorio en GitHub y envíe el link a la persona que le envió este desafío.
+Suba todo el código a un repositorio en GitHub. Genere un archivo README.md que responda y explique lo requerido en los ejercicios anteriores. Envíe el link del repositorio a la persona que le envió este desafío.
