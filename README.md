@@ -1,6 +1,6 @@
 # Test Data Engineer
 
-El desafío consiste en crear una base de datos en Postgres usando Docker y cargar los datos del archivo `trips.csv` en las tablas que considere correspondientes.
+El desafío consiste en crear una base de datos en Postgres usando Docker, cargar los datos del archivo `trips.csv` en las tablas que considere correspondientes y realizar algunas operaciones con los datos.
 
 El archivo `trips.csv` contiene información simulada de viajes realizados en Awto. Cada fila está representada por un viaje. Las columnas corresponden a:
 
