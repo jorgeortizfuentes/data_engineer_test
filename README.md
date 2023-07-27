@@ -35,7 +35,11 @@ A continuación, usted debe:
 
 5. Cree una nueva tabla en Postgres llamada `resumen_diario`.
 
-   1. Genera con Python un proceso de ETL que cargue en la tabla un resumen por día de la cantidad de viajes, los suma de ingresos y la suma de metros recorridos. Explique la decisión de diseño que tomó para generar el resumen.
+   1. Genera con Python un proceso de ETL que cargue en la tabla un resumen por día de:
+      - la cantidad de viajes
+      - los suma de ingresos
+      - la suma de metros recorridos.
+        Explique y justifique las decisiones que tomó para generar el resumen. 
    2. Señale (sin necesidad de implementar) qué procesos podría desarrollar para asegurar la consistencia de los datos en la tabla `resumen_diario`.
    3. Señale (sin necesidad de implementar) cómo podría automatizar este proceso de ETL de manera diaria.
 
